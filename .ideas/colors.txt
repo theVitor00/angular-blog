@@ -1,0 +1,4 @@
+main: #121212
+icon: gradient(#EB2583 to #FF7236 linear 45° bottom left to top right)
+main-posts-background: #FFFFFF
+page-background: #ECECEC
