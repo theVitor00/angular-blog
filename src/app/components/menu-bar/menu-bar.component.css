@@ -1,0 +1,22 @@
+.container__menu-bar {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.container__menu-area {
+
+}
+
+.container__menu-area > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__menu-area > ul > li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+
