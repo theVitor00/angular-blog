@@ -5,12 +5,28 @@
 
     <div class="container__articles">
       <div class="articles__main">
-        <app-big-card></app-big-card>
+        <app-big-card
+          photoCover="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*KSsGo7ZogfbS0w5DPj-Q8g.png"
+          cardTitle="Novidades do Angular Framework"
+          cardDescription="We introduced a developer preview “standalone” feature, which made it possible for the first time to build an application that didn’t rely on NgModules. Since then, standalone has been stabilized, and has become the recommended way to write Angular code by the Angular team. The CLI generates components with standalone: true by default, and the Angular docs teach standalone first to all new Angular developers. Adoption is strong and continues to grow the Angular ecosystem, both in the largest Angular applications written at Google as applications across the internet."
+        ></app-big-card>
       </div>
       <div class="articles__others">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
+        <app-small-card
+          cardTitle="Saiu a nova versão do Angular"
+          photoCover="https://www.syncfusion.com/blogs/wp-content/uploads/2022/02/Top-10-Features-of-Angular-13.png"
+          >
+        </app-small-card>
+        <app-small-card
+          cardTitle="Agular x React: Uma análise"
+          photoCover="https://hermes.dio.me/articles/cover/3eb9c28b-9f4a-45d3-97d9-18d32a38b8c9.jpg"
+          >
+        </app-small-card>
+        <app-small-card
+          cardTitle="Signals: O que são, onde vivem, como se reprduzem?"
+          photoCover="https://miro.medium.com/v2/resize:fit:1063/1*zIpFOYkt8f5-FA_v_j38zQ.png"
+          >
+        </app-small-card>
       </div>
     </div>
 

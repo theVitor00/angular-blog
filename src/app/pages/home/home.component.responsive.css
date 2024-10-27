@@ -1,0 +1,10 @@
+@media screen and (max-width: 959px) {
+
+  .container__articles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
+

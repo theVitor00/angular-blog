@@ -1,22 +1,24 @@
 <div class="container__big-card">
   <div class="big-card__picture">
     <img
-      src="https://coodesh.com/blog/wp-content/uploads/2022/01/curso-de-angular-1152x648.jpg"
+      src="{{ photoCover }}"
       height="220"
       alt="image placeholder">
   </div>
   <p class="big-card__date">10/10/2024 - às 23:51</p>
   <div class="big-card__title">
     <h1>
-      <a href="#">Saiu a nova versão do Angular</a>
+      <a href="#">{{ cardTitle }}</a>
     </h1>
   </div>
   <div class="big-card__description">
       <p>
         <a href="#">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae vel quasi at obcaecati impedit eum id, iure debitis voluptatum, laboriosam porro laborum et libero, incidunt eos qui est iusto!
+          {{ cardDescription }}
         </a>
       </p>
 
   </div>
 </div>
+
+<!-- src="https://coodesh.com/blog/wp-content/uploads/2022/01/curso-de-angular-1152x648.jpg" -->

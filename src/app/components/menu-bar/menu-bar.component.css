@@ -6,10 +6,6 @@
   padding: 0 15px;
 }
 
-.container__menu-area {
-
-}
-
 .container__menu-area > ul {
   display: flex;
   flex-direction: row;
