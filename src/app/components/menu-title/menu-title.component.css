@@ -3,8 +3,8 @@
 }
 
 .container__menu-title > h1 {
-  margin: 10px 0;
-  font-size: 188px;
+  margin: 10px 5px;
+  font-size: 185px;
   font-weight: bolder;
   font-family: 'segoe UI';
   display: flex;
