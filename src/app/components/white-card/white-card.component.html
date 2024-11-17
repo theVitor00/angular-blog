@@ -1,0 +1,21 @@
+<a [routerLink]="['content', id]">
+  <div class="container__white-card">
+
+    <div class="white-card__image">
+      <img [src]="whiteCardImage" alt="Em construção">
+    </div>
+
+    <div class="white-card__date">
+      {{ whiteCardDate }}
+    </div>
+
+    <div class="white-card__title">
+      <h4>{{ whiteCardTitle }}</h4>
+    </div>
+
+    <div class="white-card__description">
+      <p>{{ whiteCardDescription }}</p>
+    </div>
+
+  </div>
+</a>

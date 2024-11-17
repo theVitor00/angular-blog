@@ -6,7 +6,12 @@ import { OnInit, Input } from '@angular/core';
   templateUrl: './big-card.component.html',
   styleUrl: './big-card.component.css'
 })
+
 export class BigCardComponent implements OnInit {
+  @Input()
+  date: string = ""
+  @Input()
+  time: string = ""
   @Input()
   photoCover: string = "";
   @Input()
@@ -14,7 +19,7 @@ export class BigCardComponent implements OnInit {
   @Input()
   cardDescription: string = "";
   @Input()
-  Id:string = "0";
+  id:string = "0";
 
   constructor() { }
 

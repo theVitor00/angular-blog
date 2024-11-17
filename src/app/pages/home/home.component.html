@@ -1,16 +1,66 @@
 <div class="container__main">
-<div class="featuring__container">
+
+  <div class="featuring__container">
 
     <app-menu-title></app-menu-title>
 
     <div class="container__articles">
-      <div class="articles__main">
+      <!-- MAIN AREA-->
+
+        <app-big-card
+          [id]="bigCard.id"
+          [photoCover]="bigCard.photo"
+          [cardTitle]="bigCard.title"
+          [cardDescription]="bigCard.description"
+          [date]="bigCard.date"
+          [time]="bigCard.time"
+        ></app-big-card>
+
+
+      <div class="articles__others">
+        <app-small-card
+          [id]="smallCards[0].id"
+          [photoCover]="smallCards[0].photo"
+          [cardTitle]="smallCards[0].title"
+          [date]="smallCards[0].date"
+          [time]="smallCards[0].time"
+        ></app-small-card>
+
+        <app-small-card
+          [id]="smallCards[1].id"
+          [photoCover]="smallCards[1].photo"
+          [cardTitle]="smallCards[1].title"
+          [date]="smallCards[1].date"
+          [time]="smallCards[1].time"
+        ></app-small-card>
+
+        <app-small-card
+          [id]="smallCards[2].id"
+          [photoCover]="smallCards[2].photo"
+          [cardTitle]="smallCards[2].title"
+          [date]="smallCards[2].date"
+          [time]="smallCards[2].time"
+        ></app-small-card>
+
+        <app-small-card
+          [id]="smallCards[18].id"
+          [photoCover]="smallCards[18].photo"
+          [cardTitle]="smallCards[18].title"
+          [date]="smallCards[18].date"
+          [time]="smallCards[18].time"
+        ></app-small-card>
+      <!-- END MAIN AREA-->
+      </div>
+
+        <!-- ESTE FOI UM TESTE COM INFORMAÇÕES HARD CODED
         <app-big-card
           Id="1"
           photoCover="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*KSsGo7ZogfbS0w5DPj-Q8g.png"
           cardTitle="Novidades do Angular Framework"
           cardDescription="We introduced a developer preview “standalone” feature, which made it possible for the first time to build an application that didn’t rely on NgModules. Since then, standalone has been stabilized, and has become the recommended way to write Angular code by the Angular team. The CLI generates components with standalone: true by default, and the Angular docs teach standalone first to all new Angular developers. Adoption is strong and continues to grow the Angular ecosystem, both in the largest Angular applications written at Google as applications across the internet."
-        ></app-big-card>
+          date="24/11/2024"
+          time="23:32"
+          ></app-big-card>
       </div>
       <div class="articles__others">
         <app-small-card
@@ -31,8 +81,24 @@
           photoCover="https://miro.medium.com/v2/resize:fit:1063/1*zIpFOYkt8f5-FA_v_j38zQ.png"
           >
         </app-small-card>
+      -->
       </div>
     </div>
 
-  </div>
+    <div class="container__regular-posts">
+      <div class="other-posts">
+        <h3>OTHER POSTS</h3>
+      </div>
+
+      <div class="regular-tabs">
+        <app-white-card
+          *ngFor="let card of smallCards.slice(0, 16)"
+          [id]="card.id"
+          [whiteCardDate]="card.date"
+          [whiteCardImage]="card.photo"
+          [whiteCardTitle]="card.title"
+          [whiteCardDescription]="card.description"
+        ></app-white-card>
+      </div>
+    </div>
 </div>

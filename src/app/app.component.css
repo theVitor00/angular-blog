@@ -1,4 +1,4 @@
-header {
+header, .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,4 +6,12 @@ header {
 
   background-color: #111111;
   color: #fff;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
 }

@@ -5,10 +5,10 @@
       height="220"
       alt="image placeholder">
   </div>
-  <p class="big-card__date">10/10/2024 - às 23:51</p>
+  <p class="big-card__date">{{ date }} às {{ time }}</p>
   <div class="big-card__title">
     <h1>
-      <a [routerLink]="['content', Id]">{{ cardTitle }}</a>
+      <a [routerLink]="['content', id]">{{ cardTitle }}</a>
     </h1>
   </div>
   <div class="big-card__description">

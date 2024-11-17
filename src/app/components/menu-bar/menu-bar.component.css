@@ -1,5 +1,4 @@
 .container__menu-bar {
-  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,3 +15,14 @@
   list-style-type: none;
 }
 
+.container__menu-area > ul > li > a {
+  color: gray;
+}
+
+.container__menu-area > ul > li > a:hover {
+  color: rgb(212, 211, 211);
+}
+
+.container__menu-area > ul > li:hover {
+  border-bottom: 1px solid rgb(212, 211, 211);
+}

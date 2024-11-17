@@ -13,12 +13,57 @@
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.articles__main {
+  width: 100%;
+  border-radius: 30%;
+
 }
 
 .container__articles {
   margin-top: 30px;
   padding: 15px;
+  width: 100%;
+
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.container__regular-posts {
+  background-color: white;
+  width: 1203px;
+  max-width: 1203px;
+  padding: 20px 0;
+}
+
+.other-posts {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.other-posts > h3 {
+  color: rgb(95, 93, 93);
+}
+
+.regular-tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+}
+
+.articles__others {
+  height: 530px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}

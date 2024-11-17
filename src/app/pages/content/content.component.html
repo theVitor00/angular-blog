@@ -4,13 +4,15 @@
     <div class="content__cover">
       <img src="{{ photoCover }}" alt="generic coding">
     </div>
-    <a [routerLink]="['']"> << VOLTAR</a>
+    <a [routerLink]="['']"><i class="fas fa-home"></i></a>
 
-    <div class =content__title>
+    <div class=content__title>
       <h1>{{ contentTitle }}</h1>
-      <hr />
     </div>
     <div class="content__description">
+      <div class="rule">
+        <hr>
+      </div>
       <p>{{ contentDescription }}</p>
     </div>
   </div>

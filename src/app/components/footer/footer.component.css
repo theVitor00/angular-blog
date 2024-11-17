@@ -1,0 +1,48 @@
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content > h5, div {
+  margin: 20px 0;
+  color: gray;
+}
+
+h5 > i, h5 {
+  color: gray;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.compliance-info > ul, .social-media > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.compliance-info > ul > li > a {
+  font-size: 14px;
+  color: gray;
+}
+
+.social-media > ul > li > a > i {
+  font-size: 20px;
+  color: gray;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.copyright > p, .copyright > p > strong {
+  color: gray;
+}
+
+.compliance-info > ul > li > a:hover,
+.social-media > ul > li > a > i:hover {
+  color: rgb(172, 169, 169);
+}
